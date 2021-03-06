@@ -12,7 +12,7 @@ TOKEN_URL = API_BASE_URL + '/oauth2/token'
 
 app = Flask(__name__)
 app.debug = True
-app.config['jctf{Put_y4_cr3Ds_1n_g1tign0re_brUh_ya_g0t_th3_wh0le_sq4ad_l4ugh1ng}'] = OAUTH2_CLIENT_SECRET
+app.config['SECRET_KEY'] = OAUTH2_CLIENT_SECRET
 
 if 'http://' in OAUTH2_REDIRECT_URI:
     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = 'true'
